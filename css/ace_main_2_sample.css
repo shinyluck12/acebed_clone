@@ -1,0 +1,539 @@
+#bnr_big{                       /*big banner*/
+    width: 100%; /*height: 100%; 이미지 높이 만큼 알아서 갖기 때문에 이미지 넣으면 값 지워줘도 됨*/
+    padding: 0 80px;   /*포지션이랑 상관없음*/
+    box-sizing: border-box;
+    position: relative;
+}
+.banner{
+    width: 100%;
+    background-color: thistle;
+    font-size: 0;      /*꼭 안넣어도 되지만 신경쓰이면*/
+}
+/***************swiper-slide*********************/
+.swiper-slide{
+    display: flex;
+    align-items: center;
+}
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* .banner img{
+    width: 100%;
+} */
+
+.arrow{
+    width: 3px; height: 150px;
+    top: 50%;      /*부모로부터 50% 내려감*/
+    background-color: gray;
+    position: absolute;
+    transform: translateY(-50%); 
+    
+}
+.left_arrow{
+    left: 38px; /*나를 기준으로 50% 올라가라*/
+}
+.right_arrow{
+    right: 38px;
+}
+
+/*큰 제목들 한꺼번에*/
+.cont_sec{
+    width: 100%; /*height: 100px;*/
+    margin: 145px 0 80px 0;
+    /* background-color: green; */
+    position: relative;
+}
+.cont_sec>h2{
+    text-align: center;
+    font-size: 50px;
+    color: #333;
+    letter-spacing: 2px;
+}
+.cont_sec>a{
+    position: absolute;
+    right: 240px; top: 14px;
+    font-size: 16px;
+    color: #666;
+}
+
+/*ACE SCIENCE SECTION*/
+#science>a::after{   /*::가상코드*/
+        content: "";
+        display: block;
+        position: absolute;
+        top:12px; left: 50px;
+        height: 1px;
+        width: 30px;
+        background-color: #666;
+}
+#science>article{
+    width: 100%;
+    padding: 0 160px;
+    box-sizing: border-box;
+}
+.sci_wrap{
+    width: 100%; /*height: 100px;*/
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-between;
+}
+.tab{
+    margin-bottom: 27px;
+    text-decoration: none;
+}
+.tab_btn{
+    width: 300px; /*height: 100px;*/
+    /* background-color: turquoise; */
+    /* padding-top: 30%; */
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+}
+li>a {
+    font-size: 16px;
+    color: #999;
+    letter-spacing: 1px;
+} 
+.active>a{
+    font-size: 22px;
+    color: #0890c0 !important;   /*!important;다른애들보다 중요하니까 꼭 넣어쥬!*/
+    font-weight: bold;
+}
+.video{
+    width: 710px; height: 800px;
+    background-color: yellow;
+    overflow: hidden;
+}
+.video>video{
+    height: 100%;
+    transform: translateX(-30%);
+}
+.sci_txt{
+    width: 385px; /*height: 100px;*/
+    /* background-color:turquoise; */
+    display: flex;
+    align-items: center;
+}
+.sci_txt>div>h3{
+    font-size: 38px;
+    font-weight: 500;
+    color: #333;
+    line-height: 54px;
+    letter-spacing: -3px;
+}
+.sci_txt>div>p{
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 24px;
+}
+
+/*********ACE COLLECTION**********/
+.col_news{
+    position:relative;
+    width: 100%;
+    padding: 150px 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #f4f7fa;
+}
+#collection>a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top:12px; left: 50px;
+    height: 1px;
+    width: 30px;
+    background-color: #666;
+}
+#collection>article{
+    width: 100%;
+    overflow: hidden;    /*넘치는 애들 숨겨줌!*/
+}
+#col_wrap{
+    /* display: flex;    옆으로 나열! */
+    width: 300%;
+    overflow: hidden;
+}
+.col_btn>ul{
+    display: flex;
+    justify-content: center;
+}
+.col_btn .tab{
+    line-height: 30px;
+    color: #888;
+    font-size: 22px;
+}
+.col_btn .tab>a{
+    padding: 0 10px;
+    font-size: 22px;
+    color: #888;
+}
+/* .col_btn span{
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    margin: 0 26px;
+    background: #ddd;
+    vertical-align: top;
+    text-align: center;
+    
+} */
+.col{
+    width: 1280px;
+    margin-right: 50px;
+    float: left;
+    position: relative;
+}
+.col>p{
+    position: relative;
+}
+.col img{
+    width: 100%;     /*flex쓰면 세개가 가로 안에 다 들어감 그래서 .col에 float:left*/
+}
+.col_txt{
+    position: absolute;
+    left: 100px; top: 100px;
+    color: #fff;
+}
+.col_txt>ul{
+    display: flex;
+    
+}
+.col_txt li{
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 30px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    /* color: #fff; */
+}
+.col_txt>h3{
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    /* color: #fff; */
+}
+.col_txt>p{
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 30px;
+    /* color: #fff; */
+}
+.col_txt a{
+    /* display: block; 자리 너무 많이 차지함 */
+    display: inline-block;
+    border: 1px solid #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+    color: #fff;
+    padding: 0 29px;
+    margin-top: 60px;
+}
+
+
+/*COL 스크롤 바*/
+.col_scroll{
+    /*position: relative;  >> overflow:hidden; 해서 내려오면 없어도 됨*/
+    width: 1280px; height: 4px;
+    margin: 50px auto;
+    background-color: #dbdee1;
+    border-radius: 10px;
+}
+.scrollbar{
+    width: 33.333%; height: 4px;
+    background-color:#0890c0 ;
+    border-radius: 10px;
+}
+
+
+/******ACE NEWS.******/
+#news>article{
+    display: flex;
+    justify-content: center;
+}
+.news_txt{
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+}
+.news_txt>p{
+    font-size: 26px;
+    line-height: 40px;
+    color: #333;
+    letter-spacing: 25;
+}
+.news_img>a{
+    position: relative;
+}
+.news_list{
+    width: 280px;
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+}
+.news_list li{
+    padding: 40px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+.news_event1>h4{
+    color: #0890c0;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+}
+.news_event1>p{
+    color: #0890c0;
+    font-size: 20px;
+    line-height: 32px;
+    cursor: pointer;
+}
+.news_event2 >h4, .news_event3 >h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #999;
+    cursor: pointer;
+}
+.news_event2>p, .news_event3>p{
+    font-size: 20px;
+    line-height: 32px;
+    color: #999; 
+    cursor: pointer;
+}
+
+
+/*NOW SNS*/
+#sns>article{
+    padding: 0 80px;
+}
+.sns_pic{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sns_pic>li{
+    padding: 20px;
+    width:25% ;
+    box-sizing: border-box;
+}
+.sns_pic>li>a>img{
+    width: 100%;
+}
+.sns_btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.sns_btn a{
+    display: inline-block;
+    margin: 0 23px;
+    text-align: center;
+}
+.map_wrap{
+    width: 100%; 
+    overflow: hidden; /* 좌우로 넘치는 애들만 숨겨쥬*/
+    position: relative;
+    padding-bottom: 80px;
+}
+.map_img{
+    position: relative;
+}
+.map_txt  {
+position: absolute;    
+width: 340px; height: 340px;
+right:10%; bottom: 0px;
+background-color: #0890c0;
+padding: 95px 70px 90px 70px;
+box-sizing: border-box;
+}
+.map_txt>p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 30px;
+}
+.map_txt>div{
+    border-bottom: 2px solid #ebebeb;
+    margin-top: 52px;
+}
+.map_txt>div>input{
+    width:  clac ( 100% - 40px );
+    background: none;
+    border: none;
+    color: #fff;
+    line-height: 40px;
+    outline: none;
+    opacity: 0.7;
+}
+.map_txt>div>input::placeholder{
+    color: #fff;
+    font-size: 16px;
+}
+.map_search{
+    display: block;
+    float: right;
+    width: 27px; height: 40px;
+    background-image: url(../img/search-icon-wht.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.notice>ul{
+    display: flex;   /*옆으로 나열*/
+}
+.notice>ul>li{
+    width: 233px;
+    border-right: 1px solid #ebebeb;
+    text-align: center;
+}
+.notice>ul>li:last-child{
+    border-right: none;
+}
+#info>article{
+    display: flex;
+}
+.call{
+    width: 50%; height: 362px;
+    background-color: #f4f4f4;
+}
+.call>ul{
+    display: flex; height: 362px;
+    justify-content: flex-end;   /* 오른쪽으로 붙어라*/
+    align-items: center;
+    /* align-items: center;    flex하면 안 먹음 */
+}
+.call>ul>li{
+    padding-right: 50px;
+}
+.call h5{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+.call>ul p{
+    margin-top: 35px;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+.call div{
+    font-size: 16px;
+    color: #888;
+}
+.app{
+    width: 50%; height: 362px;
+    display: flex;
+    align-items: center;
+    padding-left: 10%;
+    box-sizing: border-box;
+}
+.app>div{
+    padding-top: 30px;
+}
+.app p{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #333;
+}
+.store_btn{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+.store_btn a{
+    display: block;
+    padding: 0 29px;
+    height: 50px;
+    border:1px solid #d1d1d1;
+    line-height: 50px;
+    color:#777;
+    font-size: 16px;
+    font-weight: 500;
+}
+.store_btn>li:last-child>a{
+    margin-left: 10px;
+}
+.more_btn{
+    display: block;
+    font-size: 16px;
+    color: #666;
+    position: relative;
+}
+.more_btn::after{   /*::가상코드*/
+    content: "";
+    display: block;
+    position: absolute;
+    top:12px; left: 50px;
+    height: 1px;
+    width: 30px;
+    background-color: #666;
+}
+           /***********TOP 버튼****************/
+/* .side_btn{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 18;
+}
+.top_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+}
+.bottom_btn{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    background: #f0f0f0;
+    z-index: 1;
+}
+.bottom_btn:hover{
+    background-color: #0890c0;
+    color: #fff;
+} */
+/* .bottom_btn span{
+    position: relative;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+}
+.bottom_btn span::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px; height: 100%;
+    background: #919191;
+    z-index: 2;
+}
+.bottom_btn span::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top:50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%; height: 2px;
+    background: #919191;
+    z-index: 2;
+} */
+
+/*footer start*/

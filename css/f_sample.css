@@ -1,0 +1,232 @@
+header a{
+    color: #fff !important;
+}
+main{
+    position: relative;
+    width: 100%;
+    top:0;
+}
+/*****맨 위 큰사진과 프레임******/
+#sub_title{
+    width: 100%;
+    padding: 300px 0 163px;
+    position: relative;   /*겹쳐야 되는 애들한테는 꼭 포지션!*/
+    /* top:0;  부모가 포지션있으면 지워도 됨*/
+    overflow: hidden;
+}
+.sub_frame{
+    background-image: url(../img/sub_frame/head-visual-bed.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#sub_title>h2{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #fff;
+}
+/*******왼쪽 박스*******/
+.contents{     /*클래스 이름 오타 잘 확인!!!!!*/
+    display: flex;
+}
+aside{
+    width: 300px; height: 100px;
+    margin-right: 100px;
+    /* background-color: darkcyan; */
+}
+aside strong{
+    font-weight: bold;
+}
+aside>p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    color: #666;
+    line-height: 34px;
+    padding: 30px 0;
+}
+aside>.sub_search{
+    width: 100%; height: 50px;
+    padding-left: 55px;
+    box-sizing: border-box;
+    background-color: #adc4ce;
+}
+
+.sub_search>input{
+    width: calc(100% - 50px);
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 50px;
+}
+.sub_search>input::placeholder{
+    color: #fff;
+}
+.sub_search_btn{
+    display: block;
+    float: right;
+    width: 45px; height: 100%;
+    background-image: url(../img/sub_frame/search-icon-wht.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    cursor: pointer;
+}
+.list{
+    margin-top: 25px;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+.list>li{
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    line-height: 46px;
+}
+.plus{
+    display: block;
+    float: right;
+    width: 10px; height: 46px;
+    background-image: url(../img/sub_frame/acco-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.type_btn{
+    width: 220px; height: 50px;
+    border: 1px solid #333;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 50px;
+    margin: 25px auto;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+
+/********오른쪽 박스 *********/
+article{
+    width: calc(100% - 400px); /*height: 100px;*/
+    padding-right: 250px;
+    box-sizing: border-box;
+    /* background-color:cornsilk; */
+}
+.reco_wrap>ul{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+}
+.reco_wrap li{
+    /* background-color: burlywood; */
+    /* line-height: 30px;  안 먹음*/
+    display: flex;
+    align-items: center;
+}
+.three>a{
+    width: 20px; height: 20px;
+    background-image: url(../img/sub_frame/list-type-btn-3x3-on.png);
+    background-position: center;
+    cursor: pointer;
+}
+.two>a{
+    width: 20px; height: 20px;
+    background-image: url(../img/sub_frame/list-type-btn-2x2.png);
+    background-position: center;
+    cursor: pointer;
+}
+.reco_wrap a{
+    padding:0 15px;
+    display: block;
+    background-repeat: no-repeat;
+}
+.recomend{
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    line-height: 34px;
+    padding-right: 25px;
+    background-image: url(../img/sub_frame/select-icon2.png);
+    background-position: right; 
+    background-repeat: no-repeat;
+}
+/*********프레임 리스트***********/
+.content_wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
+figure{
+    width: 32%;     /*32% * 3 = 96%*/
+    margin-right: 2%;     /*2% * 2 = 4%  3번째는 margin-rightX*/
+    padding-top: 30px;
+}
+figure>img{
+    width: 100%;
+}
+figure:nth-child(3n){
+    margin-right: 0;
+}
+figurecaption>ul>li>img{
+    vertical-align: bottom;
+}
+figurecaption{
+    padding-top: 30px;
+    color: #666;
+    font-weight: 400;
+}
+figurecaption>h5{
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    padding: 10px 0;
+}
+figurecaption>ul{
+    display: flex;
+    justify-content: space-between;
+}
+figurecaption>h5{
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    padding: 10px 0;
+}
+.f_color{
+    width: 100%; height: 14px;
+    margin: 10px 0;
+}
+.f_color>span{
+    width: 14px; height: 100%;
+    float: left;
+}
+.d0c8b5{
+    background-color: #d0c8b5;
+    /* display: inline-block;  span이라 안 먹어서 줌 근데 float으로 바꿈*/
+}
+.f_color>.e5ddc9{
+    width: 7px;
+    background-color: #e5ddc9;
+}
+.f_color>.bfaf92{
+    width: 7px;
+    background-color: #bfaf92;
+}
+/********page move********/
+.page_move>ul{
+    display: flex;
+    justify-content: center;
+}
+.page_move>ul>li>a{
+    display: block;
+    padding: 10px;
+    font-weight: 700;
+    color: #666;
+    border: 1px solid #fff;
+}
+.page_move>ul>.p_active>a{
+    border: 1px solid #0890c0;
+    color: #0890c0;
+}
