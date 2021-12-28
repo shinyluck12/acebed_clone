@@ -13,7 +13,7 @@
     <header>
         <div>
             <div class=h_top>
-                    <a href="https://www.acebed.com/member/login/index.do?rtnUrl=%2Fmain%2Findex.do">
+                    <a href="#">
                         로그인
                     </a>
                     <a href="ace_join.html">
@@ -92,7 +92,7 @@
                 </ul>
             </div>
             <h1 class="h_logo">
-                <a href="main.html">
+                <a href="index.html">
                     <img src="img/header-logo.png" alt="에이스침대로고">
                 </a>
             </h1>
