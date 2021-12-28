@@ -1,0 +1,185 @@
+main{
+    width: 100%; /*height: 200px; 테스트용*/
+    /* background-color: aqua; */
+    padding-top: 155px;
+}
+main h2{
+    font-size: 60px;
+    font-weight: 700;
+    color: #333;
+    line-height: 280px;
+    letter-spacing: -1px;
+    text-align: center;
+}
+.join_wrap{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+    padding: 80px 0 160px;
+    /* text-align: center; */
+}
+.sns_wrap{
+    width: 1440px;
+    margin: auto;
+    background-color: #f7f7f7;
+    padding: 40px;
+    box-sizing: border-box;
+}
+.sns_wrap>h3{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    color: #333333;
+    line-height: 32px;
+    letter-spacing: -1px;
+    padding-bottom: 20px;
+}
+.join_sns{
+    display: flex;
+    justify-content: center;
+}
+.join_sns>a{
+    display: inline-block;
+    padding: 20px 50px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    color: #888888;
+}
+.join_sns>a>span{
+    display: block;
+    float: left;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.kakao{
+    background-image: url(../img/sns-btn-icon-kakao.jpg);
+    width: 18px; height: 17px;
+}
+.naver{
+    background-image: url(../img/sns-btn-icon-naver.jpg);
+    width: 15px; height: 15px;
+}
+.txt_wrap{
+    width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    text-align: left;
+    border-bottom: 1px solid #ebebeb;
+}
+.txt_wrap>h4{
+    width: 486px;
+    font-size: 50px;
+    font-weight: 300;
+    color: #333333;
+    line-height: 1;
+
+}
+/**/
+.join_txt{
+    width: calc(100% - 486px);
+}
+.terms{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ebebeb;
+    padding-bottom: 50px;
+}
+.join_txt h5, dt{
+    width: 150px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+    line-height: 30px;
+    padding: 15px 0;
+}
+.customer{
+    width: calc(100% - 150px);
+    font-size: 16px;
+    font-weight: 500;
+    color: #666666;
+    line-height: 20px;
+}
+.customer li{
+    padding: 15px 0;
+}
+.customer strong{
+    float: right;
+    padding: 0 22px 0 0;
+    font-size: 16px;
+    font-weight: 700;
+    color: #333333;
+    line-height: 1;
+    background:url(../img/select-icon2.png) no-repeat right;
+}
+.title{
+    border-bottom: 1px solid #ebebeb
+}
+table th{
+    font-size: 20px;
+    font-weight: 700;
+    color: #333333;
+    line-height: 40px;
+    text-align: left;
+}
+table td{
+    font-size: 18px;
+    font-weight: 300;
+    color: #666;
+    line-height: 42px;
+    text-align: left;
+}
+
+section{
+    margin: 100px 0;
+}
+
+section>table{
+    margin: auto;
+}
+
+.join_btn_b{
+    height: 50px;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #666;
+}
+/*****************JOIN_SUBMIT*************************/
+.agree>input[type=submit]{
+    width: 225px; height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    line-height: 60px;
+    text-align: center;
+    margin-right: 10px;
+}
+.agree{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    padding: 50px;
+    margin: auto;
+}
+.agree>input[type=button]{
+    width: 225px; height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    line-height: 60px;
+    text-align: center;
+}
+.join_btn_b:hover{
+    background-color: #0890c0;
+}

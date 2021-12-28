@@ -1,0 +1,387 @@
+main{
+    position: relative;
+    top: 0;
+    overflow: hidden;
+}
+section{
+    padding: 160px;
+}
+section:first-child{
+    padding-top: 0;
+}
+
+
+
+/**********스프링 맨 위***********/
+.box_wrap{
+    width: 100%; height: 937px;
+    background-image: url(../img/spring/sub-vis-spring-bg1.jpg);
+    position: relative;
+}
+.box{
+    width: 100%; height: 100%;
+    color: #fff;
+    text-align: center;
+    border-color: #fff;
+    border-style: solid;
+    padding-top: 500px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    box-sizing: border-box;
+}
+.box>h2{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+}
+.box>p{
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 34px;
+    margin-top: 20px;
+}
+/***************SECTION별 큰 제목***************/
+section h3{
+    font-size: 40px;
+    font-weight: 300;
+    color: #333;
+    line-height: 54px;
+    text-align: center;
+}
+/****************SPRING TYPE SECTION****************/
+#spring_type{
+    background-image: url(../img/spring/spring-sec-bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding: 80px;
+}
+#spring_type>article{
+    width: 1200px; 
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+.s_type{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.s_type>figure{
+    width: calc(50% - 30px);
+    margin-right: 30px;
+    margin-bottom: 25px;
+}
+figure>img{
+    width: 100%;
+}
+.b_type{
+    width: 50%;
+}
+#spring_type figcaption{
+    font-size: 14px;
+    font-weight: 300px;
+    color: #666;
+    text-align: center;
+    line-height: 25px;
+    margin-top: 5px;
+}
+#spring_type figcaption>strong{
+    font-size: 17px;
+    font-weight: 700;
+    color: #333;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+/***************SYSTEM SECTION******************/
+.system_sec{
+    width: 100%; height: 500px;
+    background-image: url(../img/spring/spring-sec-bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-bottom: 450px;
+}
+.system_sec>article{
+    width: 1440px;
+    margin: auto;
+    display: flex;
+}
+.sys{
+    width: 20%;
+    padding: 20px 5px;
+    box-sizing: border-box;
+}
+.sys_img{
+    text-align: center;
+}
+.sys>h4{
+    font-size: 30px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+    padding: 30px 0 20px;
+}
+.sys>p{
+    position: relative;
+    top: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #666;
+    line-height: 26px;
+}
+
+
+/***********1SPRING 2PLAY SECTION*************/
+#hybrid>article{
+    width: 1440px;
+    display: flex;
+    margin: auto;
+}
+.hybrid_left{
+    display: flex;
+    justify-content: flex-end;
+    padding:0 190px
+}
+.zone_txt>ul>li{
+    width: 160px;
+    display: flex;
+    text-align: right;
+    justify-content: center;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+.zone_txt>ul>li>strong{
+    font-weight: 600;
+}
+.zone_txt>ul>li:first-child{
+    height: 100px;
+    border-right: 6px solid #eb6262;
+}
+.zone_txt>ul>li:last-child{
+    height: 405px;
+    border-right: 6px solid #6292eb;
+    margin-top: 3px;
+}
+.zone_img{
+    padding-left: 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+.red_spot{
+    position: absolute;
+    left: 56px; top: 48px;
+}
+.blue_spot{
+    position: absolute;
+    left: 150px; top:263px;
+}
+.zone_img>div{
+    animation-name: spot;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /* animation : spot 2s infinite ease-in-out; */
+}
+@keyframes spot{
+    0% {transform : scale(1);}
+    50% {transform : scale(0.8);}
+    100% {transform : scale(1);}
+}
+.hybrid_right>div{
+    margin-bottom: 70px;
+}
+.hybrid_right>h4{
+    font-size: 26px;
+    margin-bottom: 66px;
+}
+.hybrid_right h5{
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    line-height: 40px;
+}
+.hybrid_right p{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #666;
+    line-height: 26px;
+}
+.hybrid_right span{
+    display: inline-block;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    height: 40px;
+    padding: 0 24px;
+    box-sizing: border-box;
+    line-height: 36px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    margin-right: 8px;
+}
+/**/
+#sline>article{
+    width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+#sline figure{
+    width: 460px;
+}
+#sline figure img{
+    width: 100%;
+}
+#sline figcaption{
+    text-align: center;
+    padding-top: 40px;
+}
+#sline h4{
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    line-height: 1;
+    margin-bottom: 20px;
+}
+#sline p{
+    font-size: 18px;
+    font-weight: 300;
+    color: #666;
+    line-height: 26px;
+}
+
+/**/
+
+
+
+
+
+
+
+
+
+
+.p_topbot{
+    position: relative;
+}
+.p_top strong, .p_bot strong{
+    display: block;
+}
+.p_top{
+    width: 100%;height: 100px;
+    padding-right: 20px;
+    position: absolute;
+    top: calc(50% + 9px);
+    left: 0px;
+    right: auto;
+}
+.p_bot{
+    width: 100%;
+    padding-right: 20px;
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    right: auto;
+}
+.p_top::after{
+    width: 6px; height: calc(100% - 18px);
+    background-color: #eb6262;
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: auto;
+    right: 0;
+    display: block;
+}
+/*****************/
+.play{
+    display: flex;
+}
+.p_left{
+    display: flex;
+}
+.p_right{
+    width: 730px;
+    margin-bottom: 66px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #333;
+    line-height: 38px;
+}
+/*********COIL SECTION*********/
+.coil_wrap{
+    background-image: url(../img/spring/spring-sec-bg4.jpg);
+    background-repeat: no-repeat;
+    height: 718px;
+    padding-top: 250px;
+    box-sizing: border-box;
+    position: relative;
+}
+.coil_txt{
+    width: 1440px;
+    padding: 100px 0 70px;
+    box-sizing: border-box;
+    background-color: #fff;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.c_txt2{
+    margin-top: 35px;
+    font-size: 26px;
+    font-weight: 400;
+    color: #333;
+    line-height: 38px;
+    text-align: center;
+}
+.c_txt3{
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #888;
+    line-height: 1;
+    text-align: center;
+}
+/***********하이브리드 섹션************/
+.hybrid{
+    width: auto;
+    margin-right: 20px;
+}
+.hy_txt1{
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+    line-height: 1;
+}
+.hy_txt2{
+    font-size: 18px;
+    font-weight: 300;
+    color: #666;
+}
+/**/
+#history{
+    background-image: url(../img/spring/spring-sec-bg6.jpg);
+    background-size: cover;
+}
+#history>article{
+    padding-left: 60%;
+}
+#history>article>h3{
+    text-align: left;
+    padding-bottom: 80px;
+}
+#history>article>ul>li{
+    font-size: 20px;
+    font-weight: 300;
+    color: #666;
+    line-height: 40px;
+}
+
+
