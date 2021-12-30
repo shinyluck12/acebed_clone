@@ -9,8 +9,6 @@
 <br>
 -개발 인원: 1인
 <br>
--깃허브: https://github.com/shinyluck12/acebed_clone
-<br>
 <br>
 -설명: 기존 홈페이지를 보고 퍼블리싱 후, php 마리아DB를 이용하여 데이터베이스 전송하는 작업까지 했습니다.
 <br>
